@@ -1,0 +1,607 @@
+.container_1{
+  display: flex;
+  width: 100%;
+  gap: 50px;
+  font-size: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu{
+  display: flex;
+  gap: 50px;
+}
+.text{
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+}
+.container_2{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 100px;
+  float: left;
+  margin-top: 50px;
+
+}
+
+
+.head {
+  font-size: 40px;
+  text-align: left;
+  margin: 0;
+  margin-left: 35px;
+}
+.buttons{
+  display: flex;
+  gap: 10;
+  margin-top: 50%;
+  
+  border-radius: 10px;
+}
+
+
+#button1, #button2{
+  padding: 10px;
+  font-size: 16px;
+  border: 1px black solid;
+  
+  gap: 10px;
+  border-radius: 3px;
+}
+
+#button1 {
+  background-color: blue;
+  color: white;
+}
+#button2{
+  
+    background-color: lightgray;
+    color: black;
+}
+
+p{
+  margin-top: 40px;
+  color: darkgray;
+}
+
+#button {
+  background-color: blue;
+  width: 50px;
+  height: 5px;
+  border-radius: 3px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+h1 {
+  color: blue;
+}
+img{
+  display: flex;
+  
+  float: right;
+}
+
+
+@media(max-width: 800px){
+  .container_1{
+
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+  .menu {
+    display: none;
+}
+#button {
+  display: inline-block;
+}
+
+.container_2 {
+  flex-direction: column;
+  text-align: center;
+  gap: 50px;
+  flex: 1;
+}
+.buttons {
+  align-items: center;
+   
+  justify-content: center;
+}
+
+
+}
+
+
+/* body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  height: 1000px;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  background-color: rgb(0, 255, 13);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  position: relative;
+}
+
+nav {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+
+  
+nav ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+    
+  text-align: right;
+}
+
+.center{
+  background-color: aqua;
+  text-align: center;
+  padding: 50px 20px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.button{
+  
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    background-color: bisque;
+  }
+
+  .button-card {
+    background: white;
+    padding: 20px;
+    border: 1px solid #ccc;
+    width: 100%;
+    text-align: center;
+  }
+
+  footer {
+    background-color: gray;
+    color: red;
+    text-align: center;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  @media (max-width: 800) {
+
+    header {
+      flex-direction:row;
+      text-align: center;
+    }
+  
+    nav {
+      position: static;
+      margin-top: 10px;
+    }
+  
+    nav ul {
+      flex-direction: column;
+      gap: 10px;
+      text-align: right;
+
+    }
+  
+    .button {
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .button-card {
+        width: 80%;
+        max-width: 100%;
+    }
+    
+  } */
+ /* body {
+  background-color: bisque;
+}
+
+header{
+  position: fixed;
+  top: 0px;
+  bottom: 500px;
+  background-color: black;
+  color: white;
+  text-align: center;
+  width: 100%;
+  height: 4%;
+  z-index: 5;
+}
+
+footer{
+  position: fixed;
+  top: 97%; 
+  bottom: 0%;
+  background-color: black;
+  text-align: center;
+  width: 100%;
+  height: 4%;
+  color: white;
+  z-index: 5;
+}
+
+#Left_one{
+  position: static;
+  background-color: rgba(178, 255, 127, 0.671);
+  width: 170px;
+  height: 300px;
+  margin-top: 40px;
+  padding: 5px;
+  text-align: center;
+  border-radius: 20px;
+}
+ .content_one{
+ position: relative;
+  background-color: aqua;
+  color: black;
+  left: 500px;
+  bottom: 40ch;
+  width: 450px;
+  height: 300px;
+  text-align: center;
+  border-radius: 20px;
+}
+
+#Left_two{
+  position: static;
+  background-color: rgba(178, 255, 127, 0.671);
+  width: 170px;
+  height: 300px;
+  margin-bottom: 100px;
+  padding: 5px;
+  text-align: center;
+  border-radius: 20px;
+}
+
+.content_two{
+  position: relative;
+   background-color: aqua;
+   color: black;
+   left: 500px;
+   bottom: 50ch;
+   width: 450px;
+   height: 300px;
+   text-align: center;
+   border-radius: 20px;
+ }
+ #Left_three{
+  position: static;
+  background-color: rgba(178, 255, 127, 0.671);
+  width: 170px;
+  height: 300px;
+  margin-bottom: 100px;
+  padding: 5px;
+  text-align: center;
+  border-radius: 20px;
+}
+
+.content_three{
+  position: relative;
+   background-color: aqua;
+   color: black;
+   left: 500px;
+   bottom: 50ch;
+   width: 450px;
+   height: 300px;
+   text-align: center;
+   border-radius: 20px;
+ } 
+
+ @media (max-width: 1000px){
+  body{
+    background-color: darkblue;
+  }
+  #Left_one{
+    width: 130p;
+    height: 260px;
+    margin-top: 10px;
+  }
+  
+  .content_one{
+    left: 250px;
+    width: 400px;
+    height: 260px;
+  }
+ #Left_two{
+  width: 130px;
+  margin-bottom: 60px;
+  height: 260px;
+ }
+ #Left_three{
+  width: 130px;
+  height: 260px;
+  margin-bottom: 60px;
+ }
+  
+ .content_two{
+  width: 400px;
+  left: 250px;
+  height: 260px;
+}
+.content_three{
+  width: 400px;
+  left: 250px;
+  height: 260px;
+}
+img{
+  width: 100;
+  height: auto;
+}
+
+ }                                 */
+
+/* CSS display  */
+
+/* display: block */
+/* h1 {
+  display: block; /*  default value is block */
+  /* border: 1px solid red;
+  width: 400px;
+} */
+/* display: inline */
+/* h2 {
+  display: inline;
+  border: 1px solid blue;
+  width: 100px;
+  height: 100px; */
+/* } */
+
+/* span default is already inline  */
+/* span {
+  display: inline;
+  border: 1px solid orange;
+} */
+
+/* display: inline-block */
+/* h3 {
+  display: inline-block;
+  border: 1px solid green;
+  width: 100px;
+  height: 40px;
+} */
+
+
+
+/* *{
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: red;
+}
+
+
+#flag {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.none{
+  background: red;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  color: white;
+}
+
+#blue {
+  background: blue;
+  flex: 2;
+  position: relative;
+}
+
+#circle {
+  width: 150px;
+  height: 150px;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -75px;
+  margin-left: -75px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  font-weight: bold;
+} */
+
+
+
+
+
+/* 
+#first-div{
+  width: 600px;
+  border: 10px solid black;
+  border-radius: 20px;
+  text-align: center;
+  background-color: black;
+  padding-bottom: 20px;
+  overflow: hidden;
+}
+#first-div img{
+  width: 100%;
+}
+.mativation{
+  font-size: 32px;
+  font-weight: bold;
+  color: red;
+  margin-top: 10px;
+}
+.moti{
+  color: white;
+  font-size: 18px;
+}
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+  margin: 0;
+} */
+
+
+/* .father{
+    position: relative;
+    padding: 20px;
+    width: 500px;
+    height: 300px;
+    background-color: firebrick;
+    top: 200px;
+    left: 350px;
+
+}
+
+.child{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: blue;
+    top: 150px;
+    left: 250px;
+} */
+
+/* COMBINING SELECTORS  */
+
+/* body {
+    background-color: bisque;
+  }
+   */
+  /* 1 . Elementlarni gruppalarga bo'lish */
+  /* h1,
+  h2 {
+    color: purple;
+  } */
+  
+  /* ikkita class yoki id va elementlarga berish mumkin */
+  /* .box, .box2 {
+    border: 3px solid red
+  } */
+  
+  /* 2. Target only the direct child  */
+  /* .box > .done {
+    color: firebrick;
+  } */
+  /* .list > .done {
+    color: blue;
+  } */
+  
+  /* 3. Target */
+  
+  /* .list li {
+    color: blue;
+  }
+   */
+  /* 4. Chaining */
+/*   
+  li.done {
+    color: green;
+  }
+  
+  h1.title#main {
+    color: blue;
+  }
+  
+  h1#main.title {
+    color: olivedrab;
+  }
+  
+  ul p.done {
+    font-size: 10px;
+  } */
+
+
+/* #first-div{
+    background-color: rgba(5, 82, 5, 0.849);
+    padding: 20px;
+    border: 10px solid black;                         d black;
+    font-size: 20px;
+    width: 150px;
+    height: 150px;
+    text-align: center;
+    text-size-adjust:var(10px);
+}
+.none{
+    background-color: rgba(212, 255, 58, 0.849);
+   
+    
+    
+    width: 150px;
+    height: 150px;
+    
+    border:20px solid black;
+    border-width: 20px 10px 20px 10px;
+    
+    margin-left: 209px;
+}
+.first{
+    background-color: rgba(255, 58, 166, 0.849);
+   
+    
+    
+    width: 150px;
+    height: 150px;
+    
+    border:10px solid black;
+ 
+    
+    margin-left: 40px;
+} */
+
+/* *{
+    text-align: center;
+}
+
+.div{
+    
+    background-color: black;
+    color: red;
+}
+#first-div{
+    border: 0px 10px 0px 10px;
+} */
